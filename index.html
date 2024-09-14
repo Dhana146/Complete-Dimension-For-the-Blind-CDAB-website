@@ -34,6 +34,9 @@
             text-decoration: none;
             font-weight: bold;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         section {
             padding: 40px 20px;
             max-width: 1000px;
@@ -46,6 +49,21 @@
         p {
             line-height: 1.6;
         }
+        .hidden {
+            display: none;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #004d99;
+        }
         footer {
             background-color: #003366;
             color: white;
@@ -55,21 +73,6 @@
             bottom: 0;
             width: 100%;
         }
-        .btn {
-            display: inline-block;
-            background-color: #0066cc;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background-color: #00509e;
-        }
-        .objectives ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
     </style>
 </head>
 <body>
@@ -78,42 +81,56 @@
     </header>
 
     <nav>
-        <a href="#about">About Us</a>
-        <a href="#objectives">Objectives</a>
-        <a href="#membership">Membership</a>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="showSection('about')">About Us</a>
+        <a href="#" onclick="showSection('objectives')">Objectives</a>
+        <a href="#" onclick="showSection('membership')">Membership</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about">
+    <section id="introduction">
+        <h2>Welcome to CDAB</h2>
+        <p>CDAB is dedicated to empowering blind Nepali citizens both within and beyond Nepal's borders. We focus on expanding opportunities in various fields and ensuring a dignified life for visually impaired individuals.</p>
+        <a href="#" class="btn" onclick="showSection('about')">Learn More</a>
+    </section>
+
+    <section id="about" class="hidden">
         <h2>Introduction to CDAB</h2>
-        <p>The Complete Dimension Association for the Blind (CDAB) is being established with the goal of empowering blind Nepali citizens both within and beyond the borders of Nepal. CDAB aims to equip visually impaired individuals to lead dignified lives by supporting them in achieving financial, social, cultural, and psychological well-being.</p>
-        <p>CDAB focuses on expanding opportunities in various fields of employment, self-employment, and entrepreneurship. The organization will conduct in-depth research and provide support to open up a wide range of job sectors. CDAB's mission is to promote employment in diverse areas such as theater, information technology, finance, engineering, and medicine, transforming them into sustainable and advanced career options for the blind community.</p>
+        <p>The Complete Dimension Association for the Blind (CDAB) was established with the goal of empowering blind Nepali citizens both within and beyond the borders of Nepal. CDAB aims to equip visually impaired individuals to lead dignified lives by supporting them in achieving financial, social, cultural, and psychological well-being.</p>
+        <p>CDAB focuses on expanding opportunities in various fields of employment, self-employment, and entrepreneurship. The organization  conducts in-depth research and provide support to open up a wide range of job sectors. CDAB's mission is to promote employment in diverse areas such as theater, information technology, finance, engineering, and medicine, transforming them into sustainable and advanced career options for the blind community.</p>
+        <a href="#" class="btn" onclick="showSection('introduction')">Back to Introduction</a>
     </section>
 
-    <section id="objectives">
+    <section id="objectives" class="hidden">
         <h2>Our Objectives</h2>
-        <div class="objectives">
-            <p>The primary aim of CDAB is to sustain and advance current professions while opening up new opportunities for visually impaired individuals. Our key objectives include:</p>
-            <ul>
-                <li>Promoting diverse employment opportunities in fields previously considered inaccessible for the visually impaired.</li>
-                <li>Ensuring that blind individuals are not limited to teaching or civil service professions.</li>
-                <li>Facilitating sustainable and advanced career options in areas like information technology, finance, medicine, and engineering.</li>
-                <li>Expanding access to entrepreneurship opportunities for visually impaired people.</li>
-            </ul>
-        </div>
+        <p>The primary aim of CDAB is to sustain and advance current professions while opening up new opportunities for visually impaired individuals. Our key objectives include:</p>
+        <ul>
+            <li>Promoting diverse employment opportunities in fields previously considered inaccessible for the visually impaired.</li>
+            <li>Ensuring that blind individuals are not limited to teaching or civil service professions.</li>
+            <li>Facilitating sustainable and advanced career options in areas like information technology, finance, medicine, and engineering.</li>
+            <li>Expanding access to entrepreneurship opportunities for visually impaired people.</li>
+        </ul>
+        <a href="#" class="btn" onclick="showSection('introduction')">Back to Introduction</a>
     </section>
 
-    <section id="membership">
+    <section id="membership" class="hidden">
         <h2>Membership Information</h2>
         <p>CDAB offers membership for individuals who are visually impaired and those who are interested in supporting the cause. Stay tuned for more information and updates about how to become a member of CDAB.</p>
-        <!-- Placeholder for future Google Form integration -->
-        <a href="#" class="btn">Join Now</a>
+        <a href="#" class="btn" onclick="showSection('introduction')">Back to Introduction</a>
     </section>
 
     <footer id="contact">
         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>
         <p>Contact us at: Phone: +977-9761825399</p>
     </footer>
+
+    <script>
+        function showSection(id) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+            // Show the requested section
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
-        
