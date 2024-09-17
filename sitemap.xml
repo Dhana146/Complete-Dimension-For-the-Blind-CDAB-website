@@ -3,8 +3,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dhana146.github.io/CDAB-website/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/index.html"/>
   </url>
   <url>
     <loc>https://dhana146.github.io/CDAB-website/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/index.html"/>
+  </url>
+  <url>
+    <loc>https://dhana146.github.io/CDAB-website/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/about.html"/>
+  </url>
+  <url>
+    <loc>https://dhana146.github.io/CDAB-website/objectives.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/objectives.html"/>
+  </url>
+  <url>
+    <loc>https://dhana146.github.io/CDAB-website/membership.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/membership.html"/>
   </url>
 </urlset>
