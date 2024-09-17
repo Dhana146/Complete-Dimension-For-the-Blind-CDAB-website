@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Free XML Sitemap Generator: https://slickplan.com/xml-sitemap-generator -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dhana146.github.io/CDAB-website/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/index.html"/>
+    <lastmod>2024-09-17</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://dhana146.github.io/CDAB-website/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/index.html"/>
+    <lastmod>2024-09-17</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://dhana146.github.io/CDAB-website/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/about.html"/>
+    <lastmod>2024-09-17</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://dhana146.github.io/CDAB-website/objectives.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/objectives.html"/>
+    <lastmod>2024-09-17</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://dhana146.github.io/CDAB-website/membership.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dhana146.github.io/CDAB-website/membership.html"/>
+    <lastmod>2024-09-17</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>
