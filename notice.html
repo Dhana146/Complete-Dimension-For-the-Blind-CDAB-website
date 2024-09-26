@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDAB - Notice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Complete Dimension Association for the Blind (CDAB)</h1>
+    </header>
+<nav>
+        <a href="index.html">Home</a>
+</nav>
+    <!-- List of Notices -->
+    <section id="notices">
+        <h2>Notices</h2>
+
+        <!-- First notice heading (collapsible) -->
+        <h3 class="notice-heading" data-target="#first-notice-content">Final Results of the Membership Fee Renewal Poll</h3>
+        <div id="first-notice-content" class="notice-content" style="display: none;">
+            <p>Dear Members,</p>
+            <p>We are excited to announce the final results of the recent poll conducted through our Messenger group regarding the renewal amount for the membership fee. Out of 33 eligible members, 19 members participated, representing a participation rate of 57.58%.</p>
+            <p>After reviewing the results, we are happy to confirm that the majority of votes were in favor of Rs 100, and as such, the membership renewal fee has been officially set at Rs 100.</p>
+            <p>Here is a summary of the voting results:</p>
+            <ul>
+                <li>Rs 100 received 10 votes.</li>
+                <li>Rs 50 received 3 votes.</li>
+                <li>Rs 25 received 3 votes.</li>
+                <li>Rs 75 received 2 votes.</li>
+                <li>Rs 30 received 1 vote.</li>
+            </ul>
+            <p>Best regards,</p>
+            <p>CDAB Team</p>
+        </div>
+
+        <!-- Second notice heading (collapsible) -->
+        <h3 class="notice-heading" data-target="#second-notice-content">Final Decision on Membership Fee</h3>
+        <div id="second-notice-content" class="notice-content" style="display: none;">
+            <p>Dear members,</p>
+            <p>Thank you all for participating in the poll regarding the membership fee for our organization. The voting has now concluded, and I am pleased to announce the final result based on the majority's choice.</p>
+            <p>Here are the results:</p>
+            <ul>
+                <li>Rs 100: 13 votes</li>
+                <li>Rs 500: 4 votes</li>
+                <li>Rs 300: 2 votes</li>
+                <li>Rs 365 (Per day Rs 1): 1 vote</li>
+                <li>Rs 1000: 1 vote</li>
+            </ul>
+            <p>As the majority (13 members) voted for Rs 100, it has been decided that the membership fee for our organization will be Rs 100 per year.</p>
+        </div>
+
+    </section>
+    <nav>
+        <a href="about.html">About Us</a>
+        <a href="objectives.html">Objectives</a>
+        <a href="membership.html">Membership</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <footer id="contact">
+        <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>
+        <p>Contact us at: Phone: +977-9761825399</p>
+    </footer>
+
+    <!-- JavaScript to handle notice expansion/collapse -->
+    <script>
+        // Add click event to all notice headings
+        document.querySelectorAll('.notice-heading').forEach(function(heading) {
+            heading.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.querySelector(targetId);
+
+                // Hide all notice contents first
+                document.querySelectorAll('.notice-content').forEach(function(notice) {
+                    notice.style.display = 'none';
+                });
+
+                // Show the clicked notice content
+                content.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
