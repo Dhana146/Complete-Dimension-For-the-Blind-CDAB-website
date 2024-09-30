@@ -34,6 +34,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #66b2ff; /* Lighter blue on hover */
 }
 
 section {
@@ -85,4 +86,31 @@ footer {
     bottom: 0;
     width: 100%;
 }
-    
+
+/* New styles for hidden contact info */
+#contact-info {
+    display: none; /* Initially hidden */
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Optional: Add some padding and spacing to the contact details list */
+#contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact-info li {
+    margin-bottom: 5px;
+}
+
+/* Ensure alignment in footer */
+footer p {
+    margin: 5px 0;
+}
