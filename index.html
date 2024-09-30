@@ -6,6 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CDAB - Home</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to toggle contact info visibility
+        function toggleContact() {
+            var contactInfo = document.getElementById("contact-info");
+            contactInfo.style.display = "block";
+        }
+
+        // Automatically show contact section if URL contains #contact
+        window.onload = function() {
+            if (window.location.hash === "#contact") {
+                toggleContact(); // Reveal the contact info
+            }
+        }
+
+        // Add event listener for contact link click
+        function setupContactLink() {
+            var contactLink = document.getElementById("contact-link");
+            contactLink.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default behavior of link
+                toggleContact(); // Reveal contact info
+                window.location.hash = "contact"; // Update the URL hash
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', setupContactLink);
+    </script>
 </head>
 <body>
     <header>
@@ -13,7 +39,7 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
+        <a href="#">Home</a> <!-- No need for index.html link -->
     </nav>
 
     <section id="home">
@@ -21,18 +47,27 @@
         <p>CDAB is dedicated to empowering blind Nepali citizens. We focus on expanding opportunities in various fields and ensuring a dignified life for visually impaired individuals.</p>
         <a href="about.html" class="btn">Learn More</a>
         <h2><a href="notice.html"> View Latest Notice</a></h2> <!-- Make heading clickable -->
-        <p>updatable notice can be found in this page.</p>
+        <p>Updatable notice can be found on this page.</p>
     </section>
-<nav>
+
+    <nav>
         <a href="about.html">About Us</a>
         <a href="objectives.html">Objectives</a>
         <a href="membership.html">Membership</a>
-        <a href="#contact">Contact</a>
+        <a href="#" id="contact-link">Contact</a> <!-- Link to contact section with an ID -->
     </nav>
 
     <footer id="contact">
         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>
-        <p>Contact us at: Phone: +977-9761825399</p>
+        <div id="contact-info" style="display: none;">
+            <p>Contact us at:</p>
+            <ul>
+                <li>Gmail: sunil.theeng36@gmail.com</li>
+                <li>mahataradhanaraj02@gmail.com</li>
+                <li>Sugit1993@gmail.com</li>
+                <li>dineshpaudel698@gmail.com</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
