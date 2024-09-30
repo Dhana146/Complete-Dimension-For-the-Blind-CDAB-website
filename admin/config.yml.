@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: dhana146/CDAB-website # Your repository name
+  branch: main # You're hosting on the main branch
+
+media_folder: "assets/uploads" # Media files (like images) will be stored here
+public_folder: "/assets/uploads" # Public-facing path for media files
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.html" # Path to your home page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "About Page"
+        name: "about"
+        file: "about.html" # Path to your about page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Objective Page"
+        name: "objective"
+        file: "objective.html" # Path to the objective page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Notice Page"
+        name: "notice"
+        file: "notice.html" # Path to the notice page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Membership Page"
+        name: "membership"
+        file: "membership.html" # Path to the membership page
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
