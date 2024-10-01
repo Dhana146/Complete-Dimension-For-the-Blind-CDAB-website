@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+/dist
+/build
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# C extensions
+*.pyd
+
+# Environment variables
+.env
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+venv.bak/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
