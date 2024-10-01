@@ -6,26 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CDAB - Empowering the Visually Impaired</title>
     <link rel="stylesheet" href="style.css">
+
+        <!-- Firebase JS SDKs -->
     <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js"></script>
 
-    <script>
-      // Firebase configuration
-      const firebaseConfig = {
-            apiKey: "AIzaSyC7gOG_hCNZvR6IZWAJRhQJya8r8hLJ5Oo",
-      authDomain: "cdab-website.firebaseapp.com",
-      projectId: "cdab-website",
-      storageBucket: "cdab-website.appspot.com",
-      messagingSenderId: "211150197415",
-      appId: "1:211150197415:web:27bb23098504e019730182",
-      measurementId: "G-C3FC4CP935"
-      };
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-
-      const auth = firebase.auth();
-    </script>
+        <!-- External Firebase Config -->
+    <script src="firebase-config.js"></script> <!-- Link to external config -->
 </head>
 <body>
     <header>
