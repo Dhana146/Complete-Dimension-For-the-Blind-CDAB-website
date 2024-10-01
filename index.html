@@ -6,32 +6,6 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>CDAB - Empowering the Visually Impaired</title>
      <link rel="stylesheet" href="style.css">
-     <script>
-         // Function to toggle contact info visibility
-         function toggleContact() {
-             var contactInfo = document.getElementById("contact-info");
-             contactInfo.style.display = "block";
-         }
- 
-         // Automatically show contact section if URL contains #contact
-         window.onload = function() {
-             if (window.location.hash  3 Equal sign "#contact") {
-                 toggleContact(); // Reveal the contact info
-             }
-         }
- 
-         // Add event listener for contact link click
-         function setupContactLink() {
-             var contactLink = document.getElementById("contact-link");
-             contactLink.addEventListener("click", function(event) {
-                 event.preventDefault(); // Prevent default behavior of link
-                 toggleContact(); // Reveal contact info
-                 window.location.hash = "contact"; // Update the URL hash
-             });
-         }
- 
-         window.addEventListener('DOMContentLoaded', setupContactLink);
-     </script>
  </head>
  <body>
      <header>
@@ -43,7 +17,7 @@
          <a href="about.html">About Us</a>
          <a href="objectives.html">Objectives</a>
          <a href="membership.html">Membership</a>
-         <a href="#" id="contact-link">Contact</a>
+         <a href="contact.html">Contact</a>
      </nav>
  
      <section id="home">
@@ -81,17 +55,8 @@
          <p>Stay informed about our latest programs, events, and announcements. Visit the notice board for regular updates.</p>
      </section>
  
-     <footer id="contact">
-         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>
-         <div id="contact-info" style="display: none;">
-             <p>Contact us at:</p>
-             <ul>
-                 <li>Email: sunil.theeng36@gmail.com</li>
-                 <li>Email: mahataradhanaraj02@gmail.com</li>
-                 <li>Email: Sugit1993@gmail.com</li>
-                 <li>Email: dineshpaudel698@gmail.com</li>
-             </ul>
-         </div>
+     <footer id>
+         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB). All rights reserved.</p>
      </footer>
  </body>
  </html>
