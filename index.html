@@ -18,10 +18,6 @@
              if (window.location.hash  3 Equal sign "#contact") {
                  toggleContact(); // Reveal the contact info
              }
- 
-             // Display the current date and time
-             updateDateTime();
-             setInterval(updateDateTime, 1000); // Update every second
          }
  
          // Add event listener for contact link click
@@ -34,21 +30,12 @@
              });
          }
  
-         // Function to display the current date and time
-         function updateDateTime() {
-             var now = new Date();
-             var date = now.toLocaleDateString();
-             var time = now.toLocaleTimeString();
-             document.getElementById("current-datetime").innerText = "Current Date and Time: " + date + " " + time;
-         }
- 
          window.addEventListener('DOMContentLoaded', setupContactLink);
      </script>
  </head>
  <body>
      <header>
          <h1>Complete Dimension Association for the Blind (CDAB)</h1>
-         <p>Empowering Visually Impaired Individuals for a Better Future</p>
      </header>
  
      <nav>
@@ -61,40 +48,37 @@
  
      <section id="home">
          <h2>Welcome to CDAB</h2>
-         <p>We are committed to creating opportunities for blind and visually impaired individuals in Nepal to live dignified, independent lives. Our mission is to remove barriers and provide resources to foster personal and professional growth in a fully inclusive society.</p>
- 
-         <!-- Current Date and Time Section -->
-         <div id="current-datetime" style="margin-top: 10px; font-weight: bold;"></div> <!-- Display area for current date and time -->
+         <p>CDAB is dedicated to empowering blind and visually impaired individuals across Nepal. Our goal is to provide resources and opportunities that enable them to lead dignified, independent lives while fully participating in society.</p>
  
          <a href="about.html" class="btn">Learn More About Us</a>
  
          <!-- Mission and Vision Section -->
          <section id="mission-vision">
              <h2>Our Mission and Vision</h2>
-             <p>At CDAB, we strive to empower the visually impaired community by fostering financial, social, and psychological independence. Our vision is a society where visually impaired individuals can fully participate in all areas of life without limitation.</p>
+             <p>CDAB’s mission is to promote independence and inclusion for visually impaired individuals by offering financial, social, and psychological support. Our vision is a society where blindness is no longer a barrier to opportunity and success.</p>
          </section>
  
          <!-- Core Programs Section -->
          <section id="core-programs">
              <h2>Our Core Programs</h2>
-             <p>We offer a range of programs designed to equip visually impaired individuals with the skills and resources they need to thrive. Here are some of the ways we support our community:</p>
+             <p>We provide a wide range of services aimed at enhancing the skills and resources available to blind individuals. Our programs include:</p>
              <ul>
-                 <li><strong>Skill Development:</strong> Offering vocational training in IT, handicrafts, and digital marketing to open up employment opportunities.</li>
-                 <li><strong>Entrepreneurship Support:</strong> Providing guidance and mentorship for visually impaired entrepreneurs to start and sustain their businesses.</li>
-                 <li><strong>Assistive Technology:</strong> Ensuring access to the latest assistive devices, including screen readers and braille technology, to enhance daily living and career opportunities.</li>
-                 <li><strong>Job Placement:</strong> Connecting our members to inclusive employment opportunities in various sectors, including finance, technology, and healthcare.</li>
+                 <li><strong>Skill Development:</strong> Training programs in IT, handicrafts, and other fields to help the blind gain meaningful employment.</li>
+                 <li><strong>Entrepreneurship Support:</strong> Guidance and mentorship to assist visually impaired individuals in starting and growing their own businesses.</li>
+                 <li><strong>Assistive Technology:</strong> Access to the latest assistive devices such as braille readers and screen readers to improve quality of life.</li>
+                 <li><strong>Job Placement:</strong> Connecting visually impaired individuals with employers to foster inclusive work environments.</li>
              </ul>
          </section>
  
          <!-- Impact Section -->
          <section id="impact">
              <h2>Our Impact</h2>
-             <p>Since our inception, CDAB has transformed the lives of over 500 visually impaired individuals, with more than 70% of them securing meaningful employment or starting their own businesses. Our work continues to create real change in communities across Nepal.</p>
+             <p>CDAB has positively impacted over 500 visually impaired individuals by helping them acquire necessary skills and secure employment. Through our efforts, 70% of our participants have found meaningful jobs or launched successful businesses.</p>
          </section>
  
          <!-- Latest Notices Section -->
          <h2><a href="notice.html">View Latest Notices</a></h2>
-         <p>Stay up to date with our latest announcements, programs, and events. Check out our notices for more information.</p>
+         <p>Stay informed about our latest programs, events, and announcements. Visit the notice board for regular updates.</p>
      </section>
  
      <footer id="contact">
