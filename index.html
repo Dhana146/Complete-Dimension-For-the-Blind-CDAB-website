@@ -1,73 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CDAB - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        // Function to toggle contact info visibility
-        function toggleContact() {
-            var contactInfo = document.getElementById("contact-info");
-            contactInfo.style.display = "block";
-        }
-
-        // Automatically show contact section if URL contains #contact
-        window.onload = function() {
-            if (window.location.hash === "#contact") {
-                toggleContact(); // Reveal the contact info
-            }
-        }
-
-        // Add event listener for contact link click
-        function setupContactLink() {
-            var contactLink = document.getElementById("contact-link");
-            contactLink.addEventListener("click", function(event) {
-                event.preventDefault(); // Prevent default behavior of link
-                toggleContact(); // Reveal contact info
-                window.location.hash = "contact"; // Update the URL hash
-            });
-        }
-
-        window.addEventListener('DOMContentLoaded', setupContactLink);
-    </script>
-</head>
-<body>
-    <header>
-        <h1>Complete Dimension Association for the Blind (CDAB)</h1>
-    </header>
-
-    <nav>
-        <a href="#">Home</a> <!-- No need for index.html link -->
-    </nav>
-
-    <section id="home">
-        <h2>Welcome to CDAB</h2>
-        <p>CDAB is dedicated to empowering blind Nepali citizens. We focus on expanding opportunities in various fields and ensuring a dignified life for visually impaired individuals.</p>
-        <a href="about.html" class="btn">Learn More</a>
-        <h2><a href="notice.html"> View Latest Notice</a></h2> <!-- Make heading clickable -->
-        <p>Updatable notice can be found on this page.</p>
-    </section>
-
-    <nav>
-        <a href="about.html">About Us</a>
-        <a href="objectives.html">Objectives</a>
-        <a href="membership.html">Membership</a>
-        <a href="#" id="contact-link">Contact</a> <!-- Link to contact section with an ID -->
-    </nav>
-
-    <footer id="contact">
-        <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>
-        <div id="contact-info" style="display: none;">
-            <p>Contact us at:</p>
-            <ul>
-                <li>Gmail: sunil.theeng36@gmail.com</li>
-                <li>mahataradhanaraj02@gmail.com</li>
-                <li>Sugit1993@gmail.com</li>
-                <li>dineshpaudel698@gmail.com</li>
-            </ul>
-        </div>
-    </footer>
-</body>
-</html>
+ <html lang="en">
+ <head>    
+     <meta charset="UTF-8">    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+     <title>CDAB - Home</title>    
+     <link rel="stylesheet" href="style.css">    
+     <script>
+         // Function to toggle contact info visibility        
+         function toggleContact() {            
+             var contactInfo = document.getElementById("contact-info");
+             contactInfo.style.display = "block";        
+         }
+ 
+         // Automatically show contact section if URL contains #contact
+         window.onload = function() {            
+             if (window.location.hash  3 Equal sign "#contact") {                
+                 toggleContact(); // Reveal the contact info            
+             }
+ 
+             // Display the current date and time
+             updateDateTime();
+             setInterval(updateDateTime, 1000); // Update every second        
+         }
+ 
+         // Add event listener for contact link click        
+         function setupContactLink() {            
+             var contactLink = document.getElementById("contact-link");
+             contactLink.addEventListener("click", function(event) {
+                 event.preventDefault(); // Prevent default behavior of link                
+                 toggleContact(); // Reveal contact info
+                 window.location.hash = "contact"; // Update the URL hash            
+             });        
+         }
+ 
+         // Function to display the current date and time
+         function updateDateTime() {
+             var now = new Date();
+             var date = now.toLocaleDateString();
+             var time = now.toLocaleTimeString();
+             document.getElementById("current-datetime").innerText = "Current Date and Time: " + date + " " + time;
+         }
+ 
+         window.addEventListener('DOMContentLoaded', setupContactLink);    
+     </script>
+ </head>
+ <body>    
+     <header>        
+         <h1>Complete Dimension Association for the Blind (CDAB)</h1>    
+     </header>
+ 
+     <nav>        
+         <a href="#">Home</a> <!-- No need for index.html link -->    
+         <a href="about.html">About Us</a>        
+         <a href="objectives.html">Objectives</a>        
+         <a href="membership.html">Membership</a>        
+         <a href="#" id="contact-link">Contact</a> <!-- Link to contact section with an ID -->    
+     </nav>
+ 
+     <section id="home">        
+         <h2>Welcome to CDAB</h2>        
+         <p>CDAB is dedicated to empowering visually impaired individuals in Nepal. We focus on creating opportunities across various fields, ensuring a dignified, independent life for our community.</p>        
+         <a href="about.html" class="btn">Learn More</a>
+ 
+         <!-- Current Date and Time Section -->
+         <div id="current-datetime" style="margin-top: 20px; font-weight: bold;"></div> <!-- Display area for current date and time -->
+ 
+         <h2><a href="notice.html">View Latest Notice</a></h2> <!-- Make heading clickable -->        
+         <p>Stay updated with our latest news and announcements. Check the latest notices here.</p>    
+     </section>
+ 
+     <footer id="contact">        
+         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>        
+         <div id="contact-info" style="display: none;">            
+             <p>Contact us at:</p>            
+             <ul>                
+                 <li>Email: sunil.theeng36@gmail.com</li>                
+                 <li>Email: mahataradhanaraj02@gmail.com</li>                
+                 <li>Email: Sugit1993@gmail.com</li>                
+                 <li>Email: dineshpaudel698@gmail.com</li>            
+             </ul>        
+         </div>    
+     </footer>
+ </body>
+ </html>
+ , Page
