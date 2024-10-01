@@ -1,37 +1,37 @@
 <!DOCTYPE html>
  <html lang="en">
- <head>    
-     <meta charset="UTF-8">    
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-     <title>CDAB - Home</title>    
-     <link rel="stylesheet" href="style.css">    
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>CDAB - Empowering the Visually Impaired</title>
+     <link rel="stylesheet" href="style.css">
      <script>
-         // Function to toggle contact info visibility        
-         function toggleContact() {            
+         // Function to toggle contact info visibility
+         function toggleContact() {
              var contactInfo = document.getElementById("contact-info");
-             contactInfo.style.display = "block";        
+             contactInfo.style.display = "block";
          }
  
          // Automatically show contact section if URL contains #contact
-         window.onload = function() {            
-             if (window.location.hash  3 Equal sign "#contact") {                
-                 toggleContact(); // Reveal the contact info            
+         window.onload = function() {
+             if (window.location.hash  3 Equal sign "#contact") {
+                 toggleContact(); // Reveal the contact info
              }
  
              // Display the current date and time
              updateDateTime();
-             setInterval(updateDateTime, 1000); // Update every second        
+             setInterval(updateDateTime, 1000); // Update every second
          }
  
-         // Add event listener for contact link click        
-         function setupContactLink() {            
+         // Add event listener for contact link click
+         function setupContactLink() {
              var contactLink = document.getElementById("contact-link");
              contactLink.addEventListener("click", function(event) {
-                 event.preventDefault(); // Prevent default behavior of link                
+                 event.preventDefault(); // Prevent default behavior of link
                  toggleContact(); // Reveal contact info
-                 window.location.hash = "contact"; // Update the URL hash            
-             });        
+                 window.location.hash = "contact"; // Update the URL hash
+             });
          }
  
          // Function to display the current date and time
@@ -42,45 +42,72 @@
              document.getElementById("current-datetime").innerText = "Current Date and Time: " + date + " " + time;
          }
  
-         window.addEventListener('DOMContentLoaded', setupContactLink);    
+         window.addEventListener('DOMContentLoaded', setupContactLink);
      </script>
  </head>
- <body>    
-     <header>        
-         <h1>Complete Dimension Association for the Blind (CDAB)</h1>    
+ <body>
+     <header>
+         <h1>Complete Dimension Association for the Blind (CDAB)</h1>
+         <p>Empowering Visually Impaired Individuals for a Better Future</p>
      </header>
  
-     <nav>        
-         <a href="#">Home</a> <!-- No need for index.html link -->    
-         <a href="about.html">About Us</a>        
-         <a href="objectives.html">Objectives</a>        
-         <a href="membership.html">Membership</a>        
-         <a href="#" id="contact-link">Contact</a> <!-- Link to contact section with an ID -->    
+     <nav>
+         <a href="#">Home</a>
+         <a href="about.html">About Us</a>
+         <a href="objectives.html">Objectives</a>
+         <a href="membership.html">Membership</a>
+         <a href="#" id="contact-link">Contact</a>
      </nav>
  
-     <section id="home">        
-         <h2>Welcome to CDAB</h2>        
-         <p>CDAB is dedicated to empowering visually impaired individuals in Nepal. We focus on creating opportunities across various fields, ensuring a dignified, independent life for our community.</p>        
-         <a href="about.html" class="btn">Learn More</a>
+     <section id="home">
+         <h2>Welcome to CDAB</h2>
+         <p>We are committed to creating opportunities for blind and visually impaired individuals in Nepal to live dignified, independent lives. Our mission is to remove barriers and provide resources to foster personal and professional growth in a fully inclusive society.</p>
  
          <!-- Current Date and Time Section -->
-         <div id="current-datetime" style="margin-top: 20px; font-weight: bold;"></div> <!-- Display area for current date and time -->
+         <div id="current-datetime" style="margin-top: 10px; font-weight: bold;"></div> <!-- Display area for current date and time -->
  
-         <h2><a href="notice.html">View Latest Notice</a></h2> <!-- Make heading clickable -->        
-         <p>Stay updated with our latest news and announcements. Check the latest notices here.</p>    
+         <a href="about.html" class="btn">Learn More About Us</a>
+ 
+         <!-- Mission and Vision Section -->
+         <section id="mission-vision">
+             <h2>Our Mission and Vision</h2>
+             <p>At CDAB, we strive to empower the visually impaired community by fostering financial, social, and psychological independence. Our vision is a society where visually impaired individuals can fully participate in all areas of life without limitation.</p>
+         </section>
+ 
+         <!-- Core Programs Section -->
+         <section id="core-programs">
+             <h2>Our Core Programs</h2>
+             <p>We offer a range of programs designed to equip visually impaired individuals with the skills and resources they need to thrive. Here are some of the ways we support our community:</p>
+             <ul>
+                 <li><strong>Skill Development:</strong> Offering vocational training in IT, handicrafts, and digital marketing to open up employment opportunities.</li>
+                 <li><strong>Entrepreneurship Support:</strong> Providing guidance and mentorship for visually impaired entrepreneurs to start and sustain their businesses.</li>
+                 <li><strong>Assistive Technology:</strong> Ensuring access to the latest assistive devices, including screen readers and braille technology, to enhance daily living and career opportunities.</li>
+                 <li><strong>Job Placement:</strong> Connecting our members to inclusive employment opportunities in various sectors, including finance, technology, and healthcare.</li>
+             </ul>
+         </section>
+ 
+         <!-- Impact Section -->
+         <section id="impact">
+             <h2>Our Impact</h2>
+             <p>Since our inception, CDAB has transformed the lives of over 500 visually impaired individuals, with more than 70% of them securing meaningful employment or starting their own businesses. Our work continues to create real change in communities across Nepal.</p>
+         </section>
+ 
+         <!-- Latest Notices Section -->
+         <h2><a href="notice.html">View Latest Notices</a></h2>
+         <p>Stay up to date with our latest announcements, programs, and events. Check out our notices for more information.</p>
      </section>
  
-     <footer id="contact">        
-         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>        
-         <div id="contact-info" style="display: none;">            
-             <p>Contact us at:</p>            
-             <ul>                
-                 <li>Email: sunil.theeng36@gmail.com</li>                
-                 <li>Email: mahataradhanaraj02@gmail.com</li>                
-                 <li>Email: Sugit1993@gmail.com</li>                
-                 <li>Email: dineshpaudel698@gmail.com</li>            
-             </ul>        
-         </div>    
+     <footer id="contact">
+         <p>&copy; 2024 Complete Dimension Association for the Blind (CDAB)</p>
+         <div id="contact-info" style="display: none;">
+             <p>Contact us at:</p>
+             <ul>
+                 <li>Email: sunil.theeng36@gmail.com</li>
+                 <li>Email: mahataradhanaraj02@gmail.com</li>
+                 <li>Email: Sugit1993@gmail.com</li>
+                 <li>Email: dineshpaudel698@gmail.com</li>
+             </ul>
+         </div>
      </footer>
  </body>
  </html>
